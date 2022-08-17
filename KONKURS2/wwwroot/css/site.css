@@ -1,0 +1,100 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #eef2f5;
+}
+
+#left-col {
+    background-color: #005aa1;
+    color: white;
+
+}
+
+#right-col {
+
+    width: 100%;
+    height: auto;
+}
+
+#left-text {
+    width: 100%;
+    line-height: 35px;
+    padding-top:17%;
+    padding-bottom:3%;
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.row.g-0 {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+#tul-ur {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #005aa1;
+    color: white;
+}
+
+#toi-ur {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #005aa1;
+    color:white;
+    
+}
+
+#toi-ur-list {
+    background-color: white;
+    font-size: 12px;
+    margin-top:10px;
+
+}
+
+#tul-ur-list {
+    background-color: white;
+    font-size: 12px;
+    
+}
+
+#remove {
+    margin-bottom: 4px;
+    margin-left: 5px;
+}
+
+#footer1 {
+    background-color: #373737;
+    color: #dedede;
+    line-height: 12px;
+    padding:35px;
+    margin-top:10px;
+}
+
+#events {
+    height: 100%;
+    width: 100%;
+}
+
+#pealmine {
+    padding-bottom: 10px;
+}
+
+#lisa {
+    color: grey;
+    margin-top:10px;
+}

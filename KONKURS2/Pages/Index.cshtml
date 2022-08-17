@@ -1,0 +1,154 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<div class="row g-0"> <!-- ÜLEMINE TEKSTI OSA KOOS PILDIGA -->
+    <div id="left-col" class="col-lg ">
+        <h6 class="center" id="left-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Integer porttitor lectus leo</b>, id pharetra augue lobortis id. <b>Suspendisse fermentum convallis nisi sed molestie.</b> Cras ut tincidunt dui, ac maximus magna. <b>Fusce eu libero nec libero volutpat pretium iaculis vel leo.</b></h6>
+       </div>
+    <div class="col-lg">
+        <img id="right-col" src="UI/pilt.jpg" />
+        </div>
+ </div>    
+ <div>
+     <div>
+
+     </div>
+    <div class="row display-flex">
+        <div id="events" class="col">
+            <div id="tul-ur" class="p-3">Tulevased Üritused</div>
+            <div  id="tul-ur-list" class="p-3">
+                <div class="container">
+                    <div class="row display-flex">
+                        <div class="col-sm">
+                            1. Lorem Ipsum Event
+                        </div>
+                        <div class="col-sm">
+                            20.05.2023
+                        </div>
+                        <div class="col-sm">
+                            <p href="google.ee">OSAVÕTJAD <img id="remove" width="15px" height="15px" href="#" src="UI/remove.svg" /></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row display-flex">
+                        <div class="col-sm">
+                            2. Integer at faucibus lorem.
+                        </div>
+                        <div class="col-sm">
+                            23.05.2023
+                        </div>
+                        <div class="col-sm">
+                            <p href="google.ee">OSAVÕTJAD <img id="remove" width="15px" height="15px" href="#" src="UI/remove.svg" /></p>
+                        </div>
+                    </div>
+                </div><div class="container">
+                    <div class="row display-flex">
+                        <div class="col-sm ">
+                            3. Vivamus ut interdum tortor, at bibendum eros
+                        </div>
+                        <div class="col-sm">
+                            26.05.2023
+                        </div>
+                        <div class="col-sm">
+                            <p href="google.ee">OSAVÕTJAD <img id="remove" width="15px" height="15px" href="#" src="UI/remove.svg" /></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="lisa">LISA ÜRITUS</div>
+
+            </div>
+        </div>
+        <div id="events" class="col"> <!-- TOIMUNUD ÜRITUSED -->
+            <div id="toi-ur" class="p-3">Toimunud Üritused</div>
+            <div id="tul-ur-list" class="p-3">
+                <div class="container">
+                    <div class="row"> <!-- ESIMENE RIDA -->
+                        <div class="col-sm">
+                            1. Nunc eu erat sed nisl
+                        </div>
+                        <div class="col-sm">
+                            20.02.2023
+                        </div>
+                        <div class="col-sm">
+                            <p href="google.ee">OSAVÕTJAD <img id="remove" width="15px" height="15px" href="#" src="UI/remove.svg" /></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row"> <!-- TEINE RIDA -->
+                        <div class="col-sm">
+                            2. Orci varius natoque parturient montes
+                        </div>
+                        <div class="col-sm">
+                            23.04.2023
+                        </div>
+                        <div class="col-sm">
+                            <p href="google.ee">OSAVÕTJAD <img id="remove" width="15px" height="15px" href="#" src="UI/remove.svg" /></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row"> <!-- KOLMAS RIDA -->
+                        <div class="col-sm">
+                            3. Integer at lentorus lorem.
+                        </div>
+                        <div class="col-sm">
+                            26.04.2023
+                        </div>
+                        <div class="col-sm">
+                            <p href="google.ee">OSAVÕTJAD <img id="remove" width="15px" height="15px" href="#" src="UI/remove.svg" /></p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+        <div id="footer1" class="container"> <!-- FOOTER -->
+                <div id="pealmine" class="row">
+                    <div class="col-sm">
+                        <h4>Colonar</h4>
+                    </div>
+                    <div  class="col-sm">
+                    <h4>Sidutrin</h4>
+                    </div>
+                    <div class="col-sm">
+                    <h4>Kontakt</h4>
+                    </div>
+                <div class="col-sm"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <p>Frintaks</p>
+                        <p>Protas</p>
+                        <p>Narges</p>
+                        <p>Sasha</p>
+                    </div>
+                    <div class="col-sm">
+                    <p>Donec vel lacus</p>
+                    <p>Curabitur lacinia</p>
+                    <p>Phasellus semper aliquet</p>
+                    <p>Sed dolor</p>
+                    </div>
+                    <div class="col-sm">
+                        <p><b>Peakontor: Tallinnas</b></p>
+                        <p>Väike- Ameerika 1, 11415 Tallinn</p>
+                        <p>Telefon: 605 4450</p>
+                        <p>Faks: 605 3186</p>
+                    </div>
+                    <div class="col-sm">
+                    <p><b>Harukontor: Võrus</b></p>
+                    <p>Oja tn 7 (külastusaadress)</p>
+                    <p>Telefon: 605 3330</p>
+                    <p>Faks: 605 3155</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+
+ </html>
