@@ -37,7 +37,7 @@ Ja kui kõik on senimaani hästi läinud, siis peaks veebirakendus teile ette tu
 
 # #TULEMUS
 
-Aeg, mis mul oli kasutuseks võetud, oli täitsa paras aeg, mida saaks kasutada selle projekti lõpetamiseks. Jõudes lõpuni, sai tehtud veebirakenduse front-end, back-end, SQL ühendatud veebirakendusega ja palju lisa, mis sai õpitud juurde, kuid praktikas mitte kasutada. Seega jõuame järgmise teema peale:
+Aeg, mis mul oli kasutuseks võetud, oli täitsa paras, mida saaks kasutada selle projekti lõpetamiseks. Jõudes lõpuni, sai tehtud veebirakenduse front-end, back-end, SQL ühendatud veebirakendusega ja veel lisa, mis sai õpitud juurde, kuid praktikas mitte kasutada. Seega jõuame järgmise teema peale:
 
 # #PROBLEEMID
 
