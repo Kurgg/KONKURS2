@@ -1,5 +1,4 @@
 ﻿<html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,44 +9,52 @@
 </head>
 
 <body>
-    <div class = "container">
-    <header>
-        <nav id="navbar1" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                    <a class="navbar-brand" asp-area="" asp-page="/Index"><img src="UI/logo.svg" /></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                    <div id="logo-left" class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" class="nav-link active" asp-area="" asp-page="/Index">AVALEHT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/YRITUSED/Index">ÜRITUSTE TABEL</a>
-                        </li>
-
-                    </ul>
-                        <form>
-                            <img id="symbol" src="UI/symbol.svg" />
-                        </form>
-                </div>
-                
-            </div>
-        </nav>
-    </header>
     <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+        <header>
+            <nav id="navbar1" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                <div class="container">
+                    <a class="navbar-brand" asp-area="" asp-page="/Index"><img src="/UI/logo.svg" /></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="logo-left" class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link active text-dark" asp-area="" asp-page="/YRITUSED/Index">AVALEHT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/YRITUSED/create">ÜRITUSTE TABEL</a>
+                            </li>
+
+                        </ul>
+                        <form>
+                            <img id="symbol" src="/UI/symbol.svg" />
+                        </form>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
     </div>
 
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+        $('#navbar1 .navbar-nav a').on('click',
+            function () {
+                $('#topheader .navbar-nav').find('li.active')
+                    .removeClass('active');
+                $(this).parent('li').addClass('active');
+            });
+    </script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
