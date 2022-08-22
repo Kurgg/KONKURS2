@@ -56,7 +56,7 @@ namespace KONKURS2.Pages.YRITUSED
             YrituseInfo.nimi = ""; YrituseInfo.aeg = ""; YrituseInfo.koht = ""; YrituseInfo.kirj = "";
             onSuccess = "New Üritus added";
 
-            Response.Redirect("/YRITUSED/Index");
+            Response.Redirect("/Index");
         }
     }
 }
