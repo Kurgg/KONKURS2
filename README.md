@@ -78,6 +78,7 @@ Siin näete kas suuremaid või väiksemaid probleeme projektil, mis on järgmine
 - C# ja SQL ühildamist;
 - C# (```public, void, try, Request.form;``` etc);
 - Selenium algseadistamine;
+- Optimiseeritud HTML ja CSS kasutamine
 
 ## KOKKUVÕTE & TULEMUS
 
