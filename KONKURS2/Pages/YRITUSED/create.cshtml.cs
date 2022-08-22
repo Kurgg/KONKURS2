@@ -52,7 +52,7 @@ namespace KONKURS2.Pages.YRITUSED
                 errorMessage = ex.Message;
                 return;
             }
-
+            //SUCCESS MESSAGE (DOES NOT WORK CURRENTLY, INVESTIGATING
             YrituseInfo.nimi = ""; YrituseInfo.aeg = ""; YrituseInfo.koht = ""; YrituseInfo.kirj = "";
             onSuccess = "New Üritus added";
 

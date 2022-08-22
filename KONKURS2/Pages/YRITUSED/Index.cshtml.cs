@@ -13,12 +13,12 @@ namespace KONKURS2.Pages.YRITUSED
         {
             try
             {
-                String connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=konkurs;Integrated Security=True";
+                String connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=konkurs;Integrated Security=True"; //CONNECTION TO SQL DATABASE
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    String sql = "SELECT * FROM yritused";
+                    String sql = "SELECT * FROM yritused"; //SELECTS EVERYTHING
 
                     using (SqlCommand command = new SqlCommand(sql, connection))
 
@@ -28,7 +28,7 @@ namespace KONKURS2.Pages.YRITUSED
                         {
                             while (reader.Read())
                             {
-                                YrituseInfo yrituseinfo = new YrituseInfo();
+                                YrituseInfo yrituseinfo = new YrituseInfo(); //GETS THE INFORMATION FROM THE TABLE AND IMPLEMENTS IT INTO "listYritused" FOR HTML USE
                                 yrituseinfo.id = "" + reader.GetInt32(0);
                                 yrituseinfo.nimi = reader.GetString(1);
                                 yrituseinfo.aeg = reader.GetDateTime(2).ToString();
