@@ -1,4 +1,5 @@
 ﻿<html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,10 +22,10 @@
                     <div id="logo-left" class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                         <ul class="navbar-nav flex-grow-1">
                             <li class="nav-item">
-                                <a class="nav-link active text-dark" asp-area="" asp-page="/YRITUSED/Index">AVALEHT</a>
+                                <a class="nav-link active text-dark" asp-page="/YRITUSED/Index">AVALEHT</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/YRITUSED/create">ÜRITUSTE TABEL</a>
+                                <a class="nav-link text-dark" asp-page="/YRITUSED/create">ÜRITUSTE TABEL</a>
                             </li>
 
                         </ul>
@@ -50,7 +51,7 @@
     <script>
         $('#navbar1 .navbar-nav a').on('click',
             function () {
-                $('#topheader .navbar-nav').find('li.active')
+                $('#navbar1 .navbar-nav').find('li.active')
                     .removeClass('active');
                 $(this).parent('li').addClass('active');
             });
