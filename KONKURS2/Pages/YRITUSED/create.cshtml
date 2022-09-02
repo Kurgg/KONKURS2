@@ -5,7 +5,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <div class="row g-0">
     <!-- ÜLEMINE TEKSTI OSA KOOS PILDIGA -->
     <div style="background-color: #005aa1; color:white;" class="col-3 ">
@@ -15,118 +14,106 @@
         <img id="right-col" style="height: 60px; width: 100%; object-fit: cover;" src="/UI/libled.jpg" />
     </div>
 </div>
-
-
 <!-- INPUT ROW'ID KUS KLIENT SAAB LISADA OMA ANDMED -->
 <div class="row">
-        <div class="col-3">
-
-        </div>
-        <div class="col-sm">
-            <h2 style="color:#005aa1; padding-top:20px;">Ürituste Lisamine</h2>
-            
-@if (Model.errorMessage.Length > 0) {
-    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <strong>@Model.errorMessage</strong>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
-    </div>
-}
-<form method="POST">
-    <div class="row mb-3">
-        <label class="col-sm-3 col-form-label">Ürituse nimi: </label>
-        <div class="col">
-            <input type="text" class="form-control" name="nimi" value="@Model.YrituseInfo.nimi" />
-        </div>
-    </div>
-
-    <div class="row mb-3">
-        <label class="col-sm-3 col-form-label">Toimumisaeg: </label>
-        <div class="col">
-            <input type="text" class="form-control" name="aeg" value="@Model.YrituseInfo.aeg" />
-        </div>
-    </div>
-
-    <div class="row mb-3">
-        <label class="col-sm-3 col-form-label">Koht: </label>
-        <div class="col"> 
-            <input type="text" class="form-control" name="koht" value="@Model.YrituseInfo.koht" />
-        </div>
-    </div>
-
-    <div class="row mb-3">
-        <label class="col-sm-3 col-form-label">Lisainfo: </label>
-        <div class="col">
+    <div class="col-3"></div>
+    <div class="col-sm">
+        <h2 style="color:#005aa1; padding-top:20px;">Ürituste Lisamine</h2> @if (Model.errorMessage.Length > 0)
+        {
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>@Model.errorMessage</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+            </div>
+        } <form method="POST">
+            <div class="row mb-3">
+                <label class="col-sm-3 col-form-label">Ürituse nimi: </label>
+                <div class="col">
+                    <input type="text" class="form-control" name="nimi" value="@Model.YrituseInfo.nimi" />
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="col-sm-3 col-form-label">Toimumisaeg: </label>
+                <div class="col">
+                    <input type="text" class="form-control" name="aeg" value="@Model.YrituseInfo.aeg" />
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="col-sm-3 col-form-label">Koht: </label>
+                <div class="col">
+                    <input type="text" class="form-control" name="koht" value="@Model.YrituseInfo.koht" />
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="col-sm-3 col-form-label">Lisainfo: </label>
+                <div class="col">
                     <textarea type="text" class="form-control" name="kirj" value="@Model.YrituseInfo.kirj"></textarea>
-        </div>
-    </div>
-
-    <!-- KONTROLLIB KAS KÕIK ON OK? -->
-
-    @if (Model.onSuccess.Length > 0) {
-        <div class="row mb-3">
-            <div class="col-sm-9">
-                <div class="alert alert-success alert-dismissible fade show" role="alert">
-                    <strong>@Model.onSuccess</strong>
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">Close</button>
                 </div>
             </div>
+            <!-- KONTROLLIB KAS KÕIK ON OK? --> @if (Model.onSuccess.Length > 0)
+            {
+                <div class="row mb-3">
+                    <div class="col-sm-9">
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <strong>@Model.onSuccess</strong>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">Close</button>
+                        </div>
+                    </div>
+                </div>
+            } <div class="row" style="padding-top:40px; padding-bottom:40px;">
+                <div class="col-md-auto">
+                    <a class="btn btn-outline-grey" style="background-color: #e6e6e6;" href="/" role="button">Tagasi</a>
+                </div>
+                <div class="col-md-auto">
+                    <button type="submit" class="btn btn-primary" style="background-color: #005aa1; padding-left:20px; padding-right:20px;">Lisa</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-3"></div>
+    <div id="footer1" class="container">
+        <!-- FOOTER -->
+        <div id="pealmine" class="row">
+            <div class="col-sm">
+                <h4>Colonar</h4>
+            </div>
+            <div class="col-sm">
+                <h4>Sidutrin</h4>
+            </div>
+            <div class="col-sm">
+                <h4>Kontakt</h4>
+            </div>
+            <div class="col-sm"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <p>Frintaks</p>
+                <p>Protas</p>
+                <p>Narges</p>
+                <p>Sasha</p>
+            </div>
+            <div class="col-sm">
+                <p>Donec vel lacus</p>
+                <p>Curabitur lacinia</p>
+                <p>Phasellus semper aliquet</p>
+                <p>Sed dolor</p>
+            </div>
+            <div class="col-sm">
+                <p>
+                    <b>Peakontor: Tallinnas</b>
+                </p>
+                <p>Väike- Ameerika 1, 11415 Tallinn</p>
+                <p>Telefon: 605 4450</p>
+                <p>Faks: 605 3186</p>
+            </div>
+            <div class="col-sm">
+                <p>
+                    <b>Harukontor: Võrus</b>
+                </p>
+                <p>Oja tn 7 (külastusaadress)</p>
+                <p>Telefon: 605 3330</p>
+                <p>Faks: 605 3155</p>
+            </div>
+        </div>
+    </div>
 </div>
-    }
-
-    <div class="row" style="padding-top:40px; padding-bottom:40px;">
-    <div class="col-md-auto">
-                        <a class="btn btn-outline-grey" style="background-color: #e6e6e6;" href="/" role="button">Tagasi</a>
-    </div>
-    <div class="col-md-auto">
-                        <button type="submit" class="btn btn-primary" style="background-color: #005aa1; padding-left:20px; padding-right:20px;">Lisa</button>
-    </div>
-    </div>
-
-</form>
-        </div>
-        <div class="col-3">
-        </div>
-        <div id="footer1" class="container">
-            <!-- FOOTER -->
-            <div id="pealmine" class="row">
-                <div class="col-sm">
-                    <h4>Colonar</h4>
-                </div>
-                <div class="col-sm">
-                    <h4>Sidutrin</h4>
-                </div>
-                <div class="col-sm">
-                    <h4>Kontakt</h4>
-                </div>
-                <div class="col-sm"></div>
-            </div>
-            <div class="row">
-                <div class="col-sm">
-                    <p>Frintaks</p>
-                    <p>Protas</p>
-                    <p>Narges</p>
-                    <p>Sasha</p>
-                </div>
-                <div class="col-sm">
-                    <p>Donec vel lacus</p>
-                    <p>Curabitur lacinia</p>
-                    <p>Phasellus semper aliquet</p>
-                    <p>Sed dolor</p>
-                </div>
-                <div class="col-sm">
-                    <p><b>Peakontor: Tallinnas</b></p>
-                    <p>Väike- Ameerika 1, 11415 Tallinn</p>
-                    <p>Telefon: 605 4450</p>
-                    <p>Faks: 605 3186</p>
-                </div>
-                <div class="col-sm">
-                    <p><b>Harukontor: Võrus</b></p>
-                    <p>Oja tn 7 (külastusaadress)</p>
-                    <p>Telefon: 605 3330</p>
-                    <p>Faks: 605 3155</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
 </html>

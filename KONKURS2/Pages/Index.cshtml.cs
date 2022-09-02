@@ -103,7 +103,7 @@ namespace KONKURS2.Pages
         public string kirj;
     }
 
-    public class toimunud_yritused //PLACEHOLDER
+    public class toimunud_yritused //PLACEHOLDER - IGNORE
     {
         public string id;
         public string nimi;
