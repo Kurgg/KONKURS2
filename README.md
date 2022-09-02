@@ -1,3 +1,4 @@
+
 # #VEEBILEHEKÜLG
 ## PROJEKTI KIRJELDUS
 
@@ -20,7 +21,24 @@ KONKURS on projekt, mis kuvab kasutajale Toimuvatest ja tulevatest üritustest, 
 **Projekti aeg: 18~ tundi**
 
 # #KUIDAS KASUTADA?
-Algselt, minge lehele [Github](https://github.com/Kurgg/KONKURS2/releases/tag/alpha), sealt laadige alla "[KONKURS2-1.0.rar](https://github.com/Kurgg/KONKURS2/releases/download/alpha/KONKURS2-1.0.rar)".
+Algselt kui selle projektiga alustame, tuleb vaja alla laadida SQL andmebaas, üks hea video mis näitab seda protsessi täpsemalt [Microsoft SQL Server with Visual Studio 2022](https://www.youtube.com/watch?v=QwEwRJDxkUE). Kindlasti jälgige kõike täpselt sama moodi kuidas tema teeb, lõpptulemusena peaks SQL andmebaas olemas olema **SQLEXPRESS** nimega. (Kui ei ole kindel kas instance name on õige või mitte, siis see video näitab kuidas kiiresti üle kontrollida [Check Instance Name on Microsoft SQL Server](https://www.youtube.com/watch?v=qFNZNFw_Wf8&t=0s).
+
+Nüüd kuna meil on SQL paigaldatud, siis sooviks tekitada ka tabeleid sinna sisse, et meie rakendus töötaks ilusti, seega kui avame  `**SERVER EXPLORER**,  siis peaksime nägema oma andmebaasi üleval. Vajutades selle andmebaasi peale ja valides **NEW QUERY** saame sisestada oma vajalikud andmed SQL päringukeeles. See päring lisab uue tabeli nimega **yritused** kus on vajalik info olemas, et edastada meie lehel tabelis ürituste kohta.
+
+    CREATE TABLE yritused (
+    id INT NOT NULL PRIMARY KEY IDENTITY,
+    nimi VARCHAR (50) NOT NULL,
+    aeg DATE NOT NULL UNIQUE,
+    koht VARCHAR(30) NOT NULL,
+    kirj VARCHAR(5000) NOT NULL,
+    );
+Lisame ka ühe näite sisse, et kui programmi avame, siis saame kinnitada, et kõik töötab ilusasti.
+
+    INSERT INTO yritused (nimi, aeg, koht, kirj) VALUES ('Üks suur üritus', '2026-05-03', 'Tallinn', 'Ürituse kirjeldus'),
+
+SQL Andmebaasi seadistus on nüüd tehtud.
+
+Minge lehele [Github](https://github.com/Kurgg/KONKURS2/releases/tag/alpha), sealt laadige alla "[KONKURS2-1.0.rar](https://github.com/Kurgg/KONKURS2/releases/download/alpha/KONKURS2-1.0.rar)".
 (Arvuti antiviirus võib minna käima sellega, see on false-positive)
 
 Kui see on alla laetud, "extractige" see ja alustage "KONKURS2.exe", kui kõik on hästi siis peaks kõik roheline olema, seega minge http://localhost:5001 (võimalusel võib olla teistsugune, vaadake teist rohelist rida).
